@@ -32,7 +32,8 @@ export class AuthController {
 
   @UseGuards(JwtAuthGuard)
   @Post('protected')
-  getProtected(@Request() req) {
-    return req.user;
+  async getProtected(@Request() req) {
+    const userId = req.user.id;
+    return this.authService.getProtectedUser(userId);
   }
 }

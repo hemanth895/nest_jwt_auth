@@ -45,4 +45,20 @@ export class AuthService {
     }
     return this.userService.create(user);
   }
+
+  // Method for protected functionality
+  async getProtectedUser(userId: number) {
+    console.log('getProtectedUser');
+    const user = await this.userService.findOneById(userId);
+
+    if (!user) {
+      throw new UnauthorizedException('User not found');
+    }
+
+    // Return the fetched user details
+    return {
+      message: 'This is a protected route',
+      user,
+    };
+  }
 }
