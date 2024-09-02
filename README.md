@@ -84,3 +84,39 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 # nest_jwt_auth
+
+
+
+
+authentication endpoints are available on
+
+
+
+# https://nest-jwt-auth-1.onrender.com/login - POST req
+
+
+
+req Body
+{
+  "email":"dcghfdgh",
+  "password":"sdgfhdsg"
+  "username" : "shdfgsdgfhgd"
+}
+
+
+# https://nest-jwt-auth-1.onrender.com/login 
+
+
+req Body
+
+{
+  "email":"dcghfdgh",
+  "password":"sdgfhdsg"
+}
+
+
+returns 
+
+{
+  access_token : "sdbghfsdhg.dgfsgdf.sgdfgsf"
+}
