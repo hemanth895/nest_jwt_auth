@@ -22,7 +22,7 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Description - to run locally either start the dev server 
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
@@ -57,6 +57,16 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+
+#  docker 
+
+# to run the container  with nest and postgres db
+$ docker-compose up
+
+
+
+
 
 ## Resources
 
